@@ -1,0 +1,101 @@
+<%- include('header'); -%>
+
+<!-- Card -->
+<div style="width:50%;" class="mx-auto">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHKCMhuK5Nt9lVzds3IBrrdKbWQjITXuNO8e_0uslCp9yJM3Lv" width="100%" alt="">
+  <div class="myCard1 text-center">
+    <h1>CCMS light System</h1>
+  </div>
+</div>
+      <div class="text-center m-5">
+            <div class="myCard mx-auto">
+                
+<!-- Default form contact -->
+<form action="/" method="POST" class="text-center border border-light p-5 ">
+
+        <p class="h4 mb-4">Complaint Form <%= sub %> </p>
+        <% if(sub !="Submitted") { %>
+        <!-- Name -->
+        <input type="text" name="fName" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+    
+        <!-- Email -->
+        <input name="loc" type="text" id="demo" class="form-control mb-4" placeholder="Location">
+        <button type="button" class="btn btn-primary" onclick="getLocation()">Get Location</button>
+        <br>
+        <!-- Subject -->
+        <label>Subject</label>
+        <select class="browser-default custom-select mb-4">
+            <option value="" disabled>Choose option</option>
+            <option value="1" selected>Fault in Light</option>
+            <option value="2">Report a issue</option>
+            <option value="3">Feature request</option>
+            <option value="4">Light change request</option>
+        </select>
+    
+        <!-- Message -->
+        <div class="form-group">
+            <textarea name="area" class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+        </div>
+    
+        <!-- Copy -->
+        
+    
+        <!-- Send button -->
+        <button class="btn btn-info btn-block" type="submit">Send</button>
+        <% } %>
+      </form>
+    
+    
+    
+
+    <!-- Default form contact -->
+
+    
+            </div>
+      </div>
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" >
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="/login" method="POST">
+            <input type="email" name="emailId" placeholder="Enter your Email">
+            <input type="password" name="pass" placeholder="Enter your password">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle</button>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/3d79cc7c-2456-4f18-b07d-5d287295be9d">
+</iframe>
+
+
+
+
+      
+      
+<%- include('footer'); -%>

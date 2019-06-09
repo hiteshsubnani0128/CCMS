@@ -1,0 +1,18 @@
+.myCard{
+    border: 1px solid lightblue;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.myCard1{
+    border: 1px solid lightblue;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.no{
+    background-color: green;
+    padding: 5px 15px;
+}
+.yes{
+    background-color: red;
+    padding: 5px 15px;
+}
